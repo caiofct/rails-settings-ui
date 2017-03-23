@@ -84,6 +84,6 @@ module RailsSettingsUi::SettingsHelper
   end
 
   def all_settings
-    RailsSettingsUi.settings_klass.public_send(get_collection_method)
+    RailsSettingsUi.settings_klass.public_send(get_collection_method).sort.reverse
   end
 end
